@@ -41,3 +41,11 @@ let rec sump =
     function
     | (m, 0) -> m
     | (m, n) -> m + sump (m+1, n-1)
+
+/// tail recursive version of sumpt - exercise 6
+let sumpt =
+    let rec iterSum = 
+        function 
+        | (m, 0, s) -> m + s
+        | (m, n, s) -> iterSum (m+1, n-1, m + s)
+    (fun (m, n) -> iterSum (m, n, 0) )
