@@ -1,6 +1,4 @@
-# yuval-khachatryan-Functional-programming-using-FSharp
-
-Solutions to Functional programming using F#.
+# Solutions to Functional programming using F#.
 ====================================================
 
 The book itself is found at 
